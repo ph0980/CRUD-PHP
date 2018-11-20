@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8"">
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+        <title>ATUALIZAR</title>
+    </head>
+    <body>
+        <form action="php/update.php" method="POST">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>IDADE</th>
+                    <th>EMAIL</th>
+                    <th>CELULAR</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td> <input type="number" name="id" id="id" required min=1> </td>
+
+                    <td> <input type="text" name="nome" id="nome" required> </td>
+
+                    <td><input type="number" name="idade" id="idade" required min='1' max='100'></td>
+
+                    <td><input type="email" name="email" id="email" required></td>
+
+                    <td><input type="text" name="celular" id="celular" max_length='11'></td>
+
+                    <td><button type="submit">ATUALIZAR</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
